@@ -36,7 +36,7 @@ def upload_to_postgres():
 with DAG(
     dag_id="taxi_trip_dag",
     start_date=datetime(2025, 4, 8),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=False
 ) as dag:
 
